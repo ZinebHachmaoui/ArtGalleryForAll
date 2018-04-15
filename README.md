@@ -1,6 +1,9 @@
 # ArtGalleryForAll
-Art Gallery For All est un projet dont l'objectif principal est de donner une nouvelle optique de l'art de la peinture au maroc reliant ainsi art et entrepranariat  et vous proposant la vente et location de tableaux à des prix  accessibles et profitables, de toutes dimensions  propices à un emplacement de qualité que ce soit dans les locaux de votre entreprise ou chez vous pour égayer votre décoration murale.
+Art Gallery For All est un site d'exposition virtuelle d'oeuvres d'art de plusieurs peintres marocains. il est developpé avec Node.js version 7.5.0, Css 3 et Html 5.
+
+
 Si vous voulez visualiser le site, il faut :
+
 1.	Se positionner dans le répertoire du projet 
 2.	Installer npm  et node.js => https://nodejs.org/en/
 3.	Saisir node index.js (dans le terminal)
