@@ -1,0 +1,24 @@
+{
+  "name": "hzineb",
+  "version": "1.0.0",
+  "description": "C'est un bon site",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha Test/index.test.js -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "chai": "^3.5.0",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "mocha": "^3.2.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}

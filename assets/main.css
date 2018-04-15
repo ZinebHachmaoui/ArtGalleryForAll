@@ -1,0 +1,86 @@
+   .carousel-inner{
+        margin-top:-20px;
+    }
+    .captionn{
+    margin-top: -550px;
+        margin-bottom:250px;
+        height:270px;
+        width:2000px;
+    margin-left: -300px;
+        margin-right: 0px;
+      background-color:#00CED1;  
+          opacity: 0.9;
+    }
+    .captionn .quote
+    {font-size:40px;
+        color: white;
+            text-align:justify;
+        margin-bottom: 30px;    
+        margin-top: 60px; 
+        margin-right: 700px;
+        margin-left: 120px;
+        padding-left:650px;
+    }
+.bg-1 { 
+    background-color: #FFA000;
+/* Yellow */
+; /* Green */
+; /* Green */
+    color: #000000;
+    margin-bottom:0px;
+       margin-left:0px;
+        margin-right:-200px;
+    margin-top:30px
+  }
+
+    .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #000000;
+}
+.illustration-gauche {
+    overflow: hidden; /* empêche le dépassement des flottants */
+    padding-left: 250px;
+    padding-right:250px;
+    text-align:justify;
+    
+  margin-bottom:250px;/* Largeur de l'image + gouttière */
+}
+.illustration-gauche .pic {
+    float: left;
+    margin-right:30px;
+    
+}
+    #carousel-example-generic{
+         padding-left: 200px;
+    padding-right:200px;
+        
+    }
+ #carousel-example-genericc{
+       margin-left:20px;
+    
+        
+    }
+    footer{
+        margin-bottom: 20px;
+        margin-left:200px;
+    }
+.nos-artistes{
+        background-color: #FFFFFF;
+        height:1400px;
+        width:970px;
+        margin-left: 160px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 10px 10px 5px grey;
+        margin-top:-20px;
+        border-radius: 5px;
+    
+}
+
+#M-Oubella {
+        margin-top:20px;
+        margin-left:20px;
+
+        height:500px;
+        width:600px;
+}

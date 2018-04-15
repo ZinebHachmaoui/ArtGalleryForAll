@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<% include partials/header.ejs %>
+    <link rel="stylesheet" type="text/css" href="/assets/main2.css">
+
+    <div>
+<nav class="navbar navbar-inverse" role="navigation" style="text-align: center;color: white; ">
+       <ul class="nav navbar-nav">
+           <li ><a href="/" style="margin-left:215px;">Acceuil</a></li>
+      <li><a href="/portrait-a-la-demande" style="margin-left:140px;">Portrait à la demande</a></li>
+           <li><a href="/nos-artistes" style="margin-left:140px;">Nos Artistes</a></li>
+                      <li class="active"><a href="/contact" style="margin-left:140px;">Contact<span class="sr-only">(current)</span></a></li>
+
+    </ul>
+     <h1 class="font_0" style="font-size:36px;color: white;text-align: center;  margin-bottom: 40px;    margin-top: 60px; margin-right: 50px;
+    margin-left: 0px;"><span><span style="font-family:amatic sc,cursive;"><span style="font-weight:bold;"><span class="color_11"  >Art Gallery For All</span> </span></span></span></h1>    
+</nav>
+</div> 
+    
+  
+      <!-- Example row of columns -->
+          <div class="nos-artistes" style="background-color:#00CED1; height:1000px;
+        width:970px;">
+<h1 class="default">
+		Contact	</h1>
+        <style scoped>
+            .default{
+                margin-top:50px;
+                margin-left:30px; 
+            }
+     
+    
+            .col-md-6{
+                margin-top:-990px;
+                margin-left:30px;  
+            }
+
+        </style>
+        <div class="loader-align" style="display:table;width:100%;height:100%;">
+        <div class="loader" style="display:table-cell;vertical-align:middle;text-align:center;">
+           
+        </div>
+        </div>
+
+	<p><div class="row"><div class="col-md-6"><br />
+<div role="form" class="wpcf7" id="wpcf7-f33-o1" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/contact/#wpcf7-f33-o1" method="post" class="wpcf7-form" id="form1" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="33" />
+<input type="hidden" name="_wpcf7_version" value="4.6" />
+<input type="hidden" name="_wpcf7_locale" value="" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f33-o1" />
+<input type="hidden" name="_wpnonce" value="1b195df3de" />
+</div>
+<p>Votre nom (obligatoire)<br />
+    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
+<p>Votre email (obligatoire)<br />
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
+<p>Votre message<br />
+    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
+<p><input type="submit" value="Envoyer" class="wpcf7-form-control wpcf7-submit" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div><br />
+</div><!-- close --><br />
+
+
+  </div>
+              <script>
+ $(function() {
+    // console.log( $("h1").html)
+   $("#form1").submit(function(event){
+       event.preventDefault() //ne fait rien
+       console.log("click")
+
+      console.log("Firstname: "+ $("input[name=firstname]").val())
+              console.log("Name: "+ $("input[name=name]").val())
+                     console.log("Compliment: "+ $("textarea[name=text]").val())
+                     comment= { 
+                     firstname: $("input[name=your-name]").val(),
+                     name:$("input[name=your-email]").val(),
+                     comment:$("textarea").val() }
+                    console.log("comment: " + JSON.stringify(comment))
+
+                     if(comment.comment){
+                     $.ajax(
+                     {
+                         url: "http://" + $(location).attr('host') + "/contact",
+                         type: 'POST',
+                         contentType: 'application/json',
+                         data: JSON.stringify(comment),
+                         success: function(data){
+                             $("textarea").val("")
+                             console.log(data)
+                         }
+                         
+                     })}
+       else{
+           console.log("no data to send.")
+       }
+
+   })
+                })
+              </script>
+
+         </div>
+    <% include partials/footer.ejs %>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+</body>
+</html>
